@@ -17,8 +17,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   button: {
-    fontSize: 16,
-    fontWeight: 'bold',
     borderRadius: 10,
     paddingVertical: 10,
     paddingHorizontal: 16,
@@ -26,6 +24,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 20
+  },
+  buttonText: {
+    fontSize: 16,
+    fontWeight: 'bold'
   },
   searchButton: {
     top: 40,
