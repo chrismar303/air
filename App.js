@@ -1,12 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar'
+import { StyleSheet, SafeAreaView } from 'react-native'
+import HomeScreen from './src/screens/Home'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Air: A Breath of Fresh Air</Text>
+    <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-    </View>
+      <HomeScreen />
+    </SafeAreaView>
   );
 }
 
@@ -17,4 +18,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
