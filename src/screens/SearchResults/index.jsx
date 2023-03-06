@@ -1,18 +1,29 @@
 import React from 'react'
-import { FlatList } from 'react-native'
+import { FlatList, StyleSheet } from 'react-native'
 import Post from '@/components/Post';
 import feed from '@/assets/data/feed'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const SearchResultsScreen = props => {
-  console.log(props.style)
   return (
-    <FlatList
-      data={feed}
-      renderItem={({ item }) => <Post post={item} />}
-      keyExtractor={item => item.id}
-      style={props.style}
-    />
+    <SafeAreaView style={styles.container}>
+      <FlatList
+        data={feed}
+        renderItem={({ item }) => <Post post={item} />}
+        keyExtractor={item => item.id}
+        style={styles.post}
+      />
+    </SafeAreaView>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    paddingBottom: 32
+  },
+  post: {
+    paddingHorizontal: 20
+  }
+})
 
 export default SearchResultsScreen
