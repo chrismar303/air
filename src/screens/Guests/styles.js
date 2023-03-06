@@ -1,12 +1,26 @@
 import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
-  rows: {
-    gap: 16
+  guestContainer: {
+    flex: 1,
+    justifyContent: 'space-between'
   },
   row: {
     borderBottomWidth: 1,
     borderColor: 'lightgray',
+  },
+  searchButton: {
+    borderRadius: 10,
+    marginBottom: 20,
+    marginHorizontal: 20,
+    paddingVertical: 14,
+    alignItems: 'center',
+    justifyContent: 'center', 
+    backgroundColor: '#f15454'
+  },
+  searchButtonText: {
+    color: 'white',
+    fontSize: 18
   },
   guestRow: {
     flexDirection: 'row',
